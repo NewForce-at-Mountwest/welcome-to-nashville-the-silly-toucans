@@ -39,7 +39,7 @@ When the user searches for any of the four categories of things to do, the resul
 
 To help you along, here is a wireframe of how your app might look
 
-![welcome wireframe](./welcome_nash_wireframe2.png)
+![welcome wireframe](https://github.com/nashville-software-school/welcome-to-nashville/blob/master/welcome_nash_wireframe2.png?raw=true)
 
 ## Notes about the APIs
 
