@@ -1,6 +1,6 @@
 # Welcome to Nashville: Build an itinerary for a day trip to Music City
 
-The city of Nashville has contracted you to build a dashboard for new residents. Approximately 100 people move to the Nashville Metro area *every day*, so they need a way of getting oriented and finding things to do in their new home.
+The Nashville Convention & Visitors Corp has contracted you to build a dashboard for tourists. Approximately 15.2 million people visit Nashville every year. NCVC wants an itinerary builder that lets tourists search for things to do during their stay.
 
 In this app users can search for four different things to do/visit in Nashville:
 * parks -- using the Nashville [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/xbru-cfzi)
@@ -8,7 +8,7 @@ In this app users can search for four different things to do/visit in Nashville:
 * meetups -- using the [Eventbrite API](https://www.eventbrite.com/developer/v3/)
 * concerts -- using the [Ticketmaster API](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/)
 
-You will be utilizing all of the skills and concepts that you've learned up to this point in the course.
+You will be using all of the skills and concepts that you've learned up to this point in the course.
 
 1. Functions
 1. Github
@@ -17,6 +17,8 @@ You will be utilizing all of the skills and concepts that you've learned up to t
 1. Handling user events
 1. Modular code
 1. Persistent storage (stretch goal)
+
+Your project managers (Josh, Kim, and Jordan) are here to answer any questions about technical requirements and to help remove any roadblocks once you start coding.
 
 ## Itinerary Builder
 
