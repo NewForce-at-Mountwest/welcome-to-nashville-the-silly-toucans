@@ -32,7 +32,7 @@ When the user searches for any of the four categories of things to do, the resul
 
 ## Visual Feature List
 
-To help you along, here is a wireframe of how your app might look. Note that this wireframe includes the first stretch goal. 
+To help you along, here is a wireframe of how your app might look. **Note that this wireframe includes the first stretch goal. For MVP, you would not need the "Save" buttons or the "My Itinerary" section.**
 
 ![welcome wireframe](https://github.com/nashville-software-school/welcome-to-nashville/blob/master/welcome_nash_wireframe2.png?raw=true)
 
