@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const meetupDomPrinter = {
 	printSingleEvent: eventFromAPI => {
 		// Build HTML string for individual entry
@@ -7,7 +6,6 @@ const meetupDomPrinter = {
 		document.querySelector("#meetupSection").innerHTML += htmlString;
 	}
 };
-=======
 // Printing Breweries to the DOM
 const renderBreweryPrint = (breweries) =>{
      let breweryInput =""
@@ -17,4 +15,3 @@ const renderBreweryPrint = (breweries) =>{
       outPutContainer.innerHTML = breweryInput }
       return outPutContainer
     }
->>>>>>> master

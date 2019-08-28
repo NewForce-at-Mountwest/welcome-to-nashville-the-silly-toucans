@@ -1,14 +1,13 @@
 // Get foods from JSON Server
-apiManager.getAllFoods().then(myParsedFoods => {
+meetupsAPIManager.getMeetups().then(event).then(idk => {
     // Loop through the foods from JSON Server
-    myParsedFoods.forEach(food => {
+    parsedEvents.forEach(event => {
       // Now fetch the food from the Food API
-      apiManager.getIngredientsForSingleFood(food).then(productInfo => {
         // Print each food to the DOM
-        domPrinter.printSingleFood(food, productInfo);
-      });
-    });
-  });
+        domPrinter.printSingleEvent(event, idk);
+      })
+    })
+
 
 
 // meetupsAPIManager.getAPIs().then(parsedMeetups => {
