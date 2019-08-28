@@ -14,6 +14,7 @@ You will be using all of the skills and concepts that you've learned up to this 
 1. Modular code
 1. Building DOM components
 1. Handling user events
+1. Reading documentation 
 1. GitHub
 1. CSS
 1. Persistent storage (stretch goal)
@@ -25,7 +26,9 @@ Your project managers are here to answer any questions about technical requireme
 When the user searches for any of the four categories of things to do, the results should be listed in the DOM. See the wireframe below for a visual cue for how this might look.
 
 ## Technical Requirements
-1. Each teammate is responsible for one API module. If your group has three members, you are only responsible for three of the APIs. Pick one to skip. You should discuss as a team how you want to handle printing to the DOM. 
+1. Each teammate is responsible for one API module. If your group has three members, you are only responsible for three of the APIs. Pick one to skip. You should discuss as a team how you want to handle printing to the DOM.
+1. Your functions that build DOM components should be in a different module than your API calls.
+1. Plan as a group which functions that build DOM components can be reused.
 1. The README for your project should include *detailed* instructions on how another person can download and run the application. PRO TIP: Don't wait until the very end to create the README.
 1. Styling is strictly _secondary_, beyond necessary display formatting. Do not add any additional visual enhancements until you have a fully functional app. The goal of every member of the team is to implement functionality with JavaScript
 1. You can add whatever boilerplate you want to your `index.html` file, but all results from APIs must be printed dynamically with JavaScript.
