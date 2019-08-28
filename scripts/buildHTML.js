@@ -9,3 +9,11 @@ const buildConcertsHTML = (concerts)=> {
     // }    printing to the dom code goes here ^
 }
 // this is the HTML builder for concerts^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+// Html for a single Brewery Name 
+const buildBreweryHtml = { 
+    buildEntryCard: (singleBreweryItem) =>{
+    return `<section>
+   <h3>${singleBreweryItem.name}</h3>
+   </section>`;
+
+  }}
