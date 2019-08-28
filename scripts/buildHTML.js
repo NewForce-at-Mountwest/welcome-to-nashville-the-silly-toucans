@@ -5,7 +5,7 @@ const buildConcertsHTML = (concerts)=> {
     for(let i=0; i<entries.length;i++){
         buildConcertsHTML+= makeConcertComponent.buildConcertCard(concerts[i])
         concertLog.innerHTML = buildConcertsHTML
-        console.log(apiManagerConcerts)
-    }
+    //     console.log(apiManagerConcerts)
+    // }    printing to the dom code goes here ^
 }
 // this is the HTML builder for concerts^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
