@@ -37,7 +37,7 @@ When the user searches for any of the four categories of things to do, the resul
 
 To help you along, here is a wireframe of how your app might look. 
 **Note:**
-- This wireframe shows a restaurant search instead of a brewery search. We had some problems with the restaurant API, so we switched it to breweries.
+- This wireframe shows a restaurant search instead of a brewery search. We had some problems with the restaurant API, so we switched it to breweries. You should be able to search breweries by name, and it should bring up breweries in Nashville that match that name.
 - This wireframe includes the first stretch goal. For MVP, you would not need the "Save" buttons or the "My Itinerary" section.**
 
 ![welcome wireframe](https://github.com/nashville-software-school/welcome-to-nashville/blob/master/welcome_nash_wireframe2.png?raw=true)
