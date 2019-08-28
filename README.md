@@ -6,9 +6,9 @@ In this app users can search for four different things to do/visit in Nashville:
 * parks -- using the Nashville [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/xbru-cfzi)
 * breweries -- using the [Open Brewery DB](https://www.openbrewerydb.org/)
 * meetups -- using the [Eventbrite API](https://www.eventbrite.com/developer/v3/)
-* concerts -- using the [Ticketmaster API](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/)
 
 You will be using all of the skills and concepts that you've learned up to this point in the course.
+* concerts -- using the [Ticketmaster API](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/)
 
 1. Functions
 1. Modular code
