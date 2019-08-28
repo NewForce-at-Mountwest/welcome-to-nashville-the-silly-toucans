@@ -1,8 +1,8 @@
 // Html for a single Brewery Name 
-const buildItinereryHtml = { 
-    buildEntryCard: (singleItinereryItem) =>{
+const buildBreweryHtml = { 
+    buildEntryCard: (singleBreweryItem) =>{
     return `<section>
-   <h3>${singleItinereryItem.name}</h3>
+   <h3>${singleBreweryItem.name}</h3>
    </section>`;
-  
+
   }}
