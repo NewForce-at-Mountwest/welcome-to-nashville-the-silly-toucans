@@ -8,14 +8,38 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <section id="bigOlContainer">
-
-    </section>
-
-    
-    <script src="scripts/apiManager.js"></script>
-    <script src="scripts/main.js"></script>
+        <section class = "concertsText">
+                <h1 class ="concertsHeader">Search for Concerts</h1>
+                 <label for=" "></label>
+                <input type="text" id= "concertsInput" placeholder="      Search for Events" autofocus />
+                    <button id= "parksSearchButton">Search</button>
+                   <div class= "parksAnswerArea"></div>
+                   </section>
+        <section class = "meetUpsText">
+                <h1 class ="meetUpsHeader">Search for Meet Up Areas</h1>
+                 <label for=" "></label>
+                <input type="text" id= "meetUpsInput" placeholder="      Search for Events" autofocus />
+                    <button id= "meetUpsSearchButton">Search</button>
+                   <div class= "meetUpsAnswerArea"></div>
+                   </section>
+        <section class = "parksText">
+            <h1 class ="parksHeader">Search for Parks</h1>
+             <label for=" "></label>
+            <input type="text" id= "parksInput" placeholder="      Search for Parks" autofocus />
+                <button id= "parksSearchButton">Search</button>
+               <div class= "parksAnswerArea"></div>
+               </section>
+        <section class = "breweryText">
+            <h1 class = "breweryHeader">Search for Brewery</h1>
+            <label for=" "></label>
+            <input type="text" id= "breweryInput" placeholder="      Type City Name" autofocus />
+                <button id= "brewerySearchButton">Search</button>
+               <div class= "breweryAnswerArea"></div>
+               </section>
+    <section id="bigOlContainer"></section>
+    <script src="api/apiManager.js"></script>
     <script src="scripts/buildHTML.js"></script>
     <script src="scripts/domPrinter.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
