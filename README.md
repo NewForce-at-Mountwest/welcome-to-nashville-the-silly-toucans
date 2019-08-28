@@ -4,7 +4,7 @@ The Nashville Convention & Visitors Corp has contracted you to build a dashboard
 
 In this app users can search for four different things to do/visit in Nashville:
 * parks -- using the Nashville [Metro Gov API](https://dev.socrata.com/foundry/data.nashville.gov/xbru-cfzi)
-* restaurants -- using the [Zomato API](https://developers.zomato.com/api)
+* breweries -- using the [Open Brewery DB](https://www.openbrewerydb.org/)
 * meetups -- using the [Eventbrite API](https://www.eventbrite.com/developer/v3/)
 * concerts -- using the [Ticketmaster API](https://developer.ticketmaster.com/products-and-docs/apis/getting-started/)
 
@@ -35,7 +35,10 @@ When the user searches for any of the four categories of things to do, the resul
 
 ## Visual Feature List
 
-To help you along, here is a wireframe of how your app might look. **Note that this wireframe includes the first stretch goal. For MVP, you would not need the "Save" buttons or the "My Itinerary" section.**
+To help you along, here is a wireframe of how your app might look. 
+**Note:**
+- This wireframe shows a restaurant search instead of a brewery search. We had some problems with the restaurant API, so we switched it to breweries.
+- This wireframe includes the first stretch goal. For MVP, you would not need the "Save" buttons or the "My Itinerary" section.**
 
 ![welcome wireframe](https://github.com/nashville-software-school/welcome-to-nashville/blob/master/welcome_nash_wireframe2.png?raw=true)
 
@@ -61,26 +64,6 @@ fetch(`https://www.eventbriteapi.com/v3/events/search/?q=nashville_${searchField
   }
 })
 
-```
-
-### Zomato API
-
-Here's an example fetch to search restuarants in Nashville.
-
-* 1138 is the `id` for the city of Nashville
-* `entity_type` must be set to `city`
-* Your API key must be added as `user-key` to the `headers` configuration for your request
-
-```js
-fetch("https://developers.zomato.com/api/v2.1/search?entity_id=1138&entity_type=city&start=first&sort=rating", {
-        headers: {
-            "Accept": "application/json",
-            "user-key": "10101010101010101010"
-        }
-    })
-    .then(r => r.json())
-    .then(results => {
-    })
 ```
 
 ## Stretch Goals
