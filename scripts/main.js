@@ -1,16 +1,12 @@
-// Brewery Text Area and Submit Button
- 
-// function breweryTextArea () {
-//     let breweryTextAreaHtml = ""
-//     breweryTextAreaHtml += `<section class = "breweryText"> <label for=" "></label>
-//     <input type="text" id= "breweryInput" placeholder="      Type City Name" autofocus />
-//     <button id= "brewerySearchButton">Search</button>
-//     <div class= "breweryAnswerArea"></div>`
-//     return breweryTextAreaHtml
-// }
+// printing concerts to the dom
 
-// const outputContainer = document.querySelector("#bigOlContainer")
+var concertsbutton = document.querySelector("#concertsSearchButton")
+var outputContainerConcerts = document.querySelector("#bigOlContainer")
 
-// outputContainer.innerHTML += breweryTextArea();
+    concertsbutton.addEventListener("click", function(){
+        outputContainerConcerts +=
+        apiManagerConcerts.getAllConcerts()
 
-apiManagerBreweries.getAllBreweries()
+    })
+
+    // done printing concerts to the dom
