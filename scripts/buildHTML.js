@@ -24,7 +24,7 @@ buildEntryCard: (singleConcertsItem) =>{
 
 // this is the end of the concerts section buildHTML
 
-
+// Build park item with just a name
 
   const buildHTMLparks=   {
       buildEntryCard: (singleParkItem)=>{

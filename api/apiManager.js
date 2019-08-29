@@ -38,11 +38,10 @@ var apiManagerConcerts ={
 // this is concerts
 
 // =======
-
+// fetches all park data from park api and prints it to Dom if called upon
 var apiManagerParks = {
     getAllParks:()=>{
 const searchParksInput = document.querySelector("#parksInput").value 
-
 return fetch(`https://data.nashville.gov/resource/74d7-b74t.json`)
 .then(response => response.json())
 .then(parksToPrint=>{
