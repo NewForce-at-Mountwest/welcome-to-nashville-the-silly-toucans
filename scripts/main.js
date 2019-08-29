@@ -1,3 +1,14 @@
+// Breweries
+// Click event to Show results for Breweries by city name
+const breweryButton = document.querySelector("#brewerySearchButton")
+var outputContainer = document.querySelector("#bigOlContainer")
+ 
+    breweryButton.addEventListener("click", function (){
+        outputContainer.innerHTML =[""],
+        outputContainer += apiManagerBreweries.getAllBreweries();
+    
+    },
+    )
 //calls individual functions from javascript files
 
 //adds click function to search button defined in index
