@@ -1,3 +1,4 @@
+
 // concert
 // this is the api stuff for the concerts vvvvvvvvvv
 var apiManagerConcerts ={
@@ -18,4 +19,16 @@ var apiManagerConcerts ={
 
 // this is where the api stuff ends for Concerts ^^^^^^^^^^
 // this is concerts
+
+// =======
+
+var apiManagerParks = {
+    getAllParks:()=>{
+const searchParksInput = document.querySelector("#parksInput").value 
+
+return fetch(`https://data.nashville.gov/resource/74d7-b74t.json`)
+.then(response => response.json())
+.then(parksToPrint=>{
+    parksToPrint.forEach(singleParks =>{
+ document.querySelector("#bigOlContainer").innerHTML += buildHTMLparks.buildEntryCard(singleParks) })})}}
 
