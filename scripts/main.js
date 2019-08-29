@@ -2,6 +2,7 @@
 
 //adds click function to search button defined in index
 document.querySelector("#meetUpsSearchButton").addEventListener("click", function() {
+  document.querySelector("#bigOlContainer").innerHTML = ``
 //selects the value of the input field for the click event
 meetupsSearchField = document.querySelector("#meetUpsInput").value
 
@@ -15,6 +16,7 @@ meetupsAPIManager.getMeetups()
 		meetupDomPrinter.printSingleEvent(singleEvent);
 	});
 });
+document.querySelector("#meetUpsInput").value = ``
 })
 
 
