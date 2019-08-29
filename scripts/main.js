@@ -4,8 +4,9 @@ const breweryButton = document.querySelector("#brewerySearchButton")
 var outputContainer = document.querySelector("#bigOlContainer")
  
     breweryButton.addEventListener("click", function (){
+        outputContainer.innerHTML =[""],
         outputContainer += apiManagerBreweries.getAllBreweries();
-        outputContainer += [""]
+    
     },
     )
 //calls individual functions from javascript files
