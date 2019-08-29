@@ -1,17 +1,10 @@
+//page for printing HTML string to the DOM
+
 const meetupDomPrinter = {
-	printSingleEvent: eventFromAPI => {
-		// Build HTML string for individual entry
-		const htmlString = buildMeetupsHTML.meetupsHTML(eventFromAPI);
+	printSingleEvent: singleEvent => {
+		// Build HTML string for individual event
+		const htmlString = buildMeetupsHTML.buildSingleEvent(singleEvent);
 		// Add HTML string to DOM
-		document.querySelector("#meetupSection").innerHTML += htmlString;
+		document.querySelector("#bigOlContainer").innerHTML += htmlString;
 	}
 };
-// Printing Breweries to the DOM
-const renderBreweryPrint = (breweries) =>{
-     let breweryInput =""
-    const outPutContainer = document.querySelector("#bigOlContainer")
-    for(let i =0; i<breweries.length; i++){
-      breweryInput += buildItinereryHtml.buildEntryCard(breweries[i])
-      outPutContainer.innerHTML = breweryInput }
-      return outPutContainer
-    }

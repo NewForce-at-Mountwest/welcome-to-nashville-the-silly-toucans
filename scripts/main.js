@@ -1,44 +1,20 @@
-// Get foods from JSON Server
-meetupsAPIManager.getMeetups().then(event).then(idk => {
-    // Loop through the foods from JSON Server
-    parsedEvents.forEach(event => {
-      // Now fetch the food from the Food API
-        // Print each food to the DOM
-        domPrinter.printSingleEvent(event, idk);
-      })
-    })
+//calls individual functions from javascript files
+
+//adds click function to search button defined in index
+document.querySelector("#meetUpsSearchButton").addEventListener("click", function() {
+//selects the value of the input field for the click event
+meetupsSearchField = document.querySelector("#meetUpsInput").value
+
+//calling function to grab information from the API from apiManager.js
+meetupsAPIManager.getMeetups()
+//API to JSON
+.then(eventsToPrint => {
+  //looping through individual events
+	eventsToPrint.events.forEach(singleEvent => {
+    //calling function to print single event to the DOM
+		meetupDomPrinter.printSingleEvent(singleEvent);
+	});
+});
+})
 
 
-
-// meetupsAPIManager.getAPIs().then(parsedMeetups => {
-// 	// Loop through the entries from JSON Server
-// 	parsedMeetups.forEach(meetups => {
-// 		// Print each entry to the DOM
-// 		meetupsDomPrinter.printSingleEntry(meetups);
-// 	  });
-//     });
-    
-
-// meetupsAPIManager.getMeetups()
-// .then(parsedEvents => {
-//     parsedEvents.forEach(events => {
-//         meetupDomPrinter.printSingleEvent(events)
-//     })
-// })
-
-// Brewery Text Area and Submit Button
- 
-// function breweryTextArea () {
-//     let breweryTextAreaHtml = ""
-//     breweryTextAreaHtml += `<section class = "breweryText"> <label for=" "></label>
-//     <input type="text" id= "breweryInput" placeholder="      Type City Name" autofocus />
-//     <button id= "brewerySearchButton">Search</button>
-//     <div class= "breweryAnswerArea"></div>`
-//     return breweryTextAreaHtml
-// }
-
-// const outputContainer = document.querySelector("#bigOlContainer")
-
-// outputContainer.innerHTML += breweryTextArea();
-
-apiManagerBreweries.getAllBreweries()
