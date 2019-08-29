@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //calls individual functions from javascript files
 
 //adds click function to search button defined in index
@@ -18,3 +19,13 @@ meetupsAPIManager.getMeetups()
 })
 
 
+=======
+
+var parksbutton =document.querySelector("#parksSearchButton")
+var outputContainerParks = document.querySelector("#bigOlContainer")
+
+parksbutton.addEventListener("click", function(){
+    
+    outputContainerParks += apiManagerParks.getAllParks()
+})
+>>>>>>> master
