@@ -1,14 +1,15 @@
-// this is the HTML builder to print out the concerts in the DOM vvvvvvvvv
-const buildConcertsHTML = (concerts)=> {
-    let buildConcertsHTML =""
-    const bigOlContainer = document.querySelector(".bigOlContainer")
-    for(let i=0; i<entries.length;i++){
-        buildConcertsHTML+= makeConcertComponent.buildConcertCard(concerts[i])
-        concertLog.innerHTML = buildConcertsHTML
-    //     console.log(apiManagerConcerts)
-    // }    printing to the dom code goes here ^
+    
+// here is the buildHTML code for the Concerts section
+
+var buildConcertsHTML = {
+buildEntryCard: (singleConcertsItem) =>{
+    return `<section>
+     <h3>${singleConcertsItem.name}</h3>
+    </section>`
 }}
-// this is the HTML builder for concerts^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+// this is the end of the concerts section buildHTML
+
 
 
 // Html for a single Brewery Name 
@@ -24,3 +25,4 @@ const buildBreweryHtml = {
           
           return`<section><h3>${singleParkItem.park_name}</h3>
           </section>`}}
+//    
