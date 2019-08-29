@@ -19,15 +19,23 @@ apiManagerConcerts
 
 // this is where the api stuff ends for Concerts ^^^^^^^^^^
 // this is concerts
-// Brewery Api manager
 
+
+// Brewery Api manager
+// Fetching the Data from the Breweries API, Building it with The BuildHTML
 const apiManagerBreweries ={
-    getAllBreweries: () =>{
-        return fetch("https://api.openbrewerydb.org/breweries?by_state=tennessee")
+    getAllBreweries: () =>{ 
+        const searchBarInput = document.querySelector("#breweryInput").value
+        console.log(searchBarInput)
+        return fetch(`https://api.openbrewerydb.org/breweries?by_state=tennessee&by_city=${searchBarInput}`)
         .then(response => response.json())
         .then(breweryToPrint=>{
             console.log(breweryToPrint)
-           
+            breweryToPrint.forEach(singleBrewery =>{
+                document.querySelector("#bigOlContainer").innerHTML += buildBreweryHtml.buildEntryCard(singleBrewery)
+        //    document.querySelector("#bigOlContainer").innerHTML += breweryToPrint
+
+// apiManagerBreweries.getAllBreweries(singleBrewery)
           })
-}
-}
+})
+}}

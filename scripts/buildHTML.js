@@ -7,8 +7,10 @@ const buildConcertsHTML = (concerts)=> {
         concertLog.innerHTML = buildConcertsHTML
     //     console.log(apiManagerConcerts)
     // }    printing to the dom code goes here ^
-}
+}}
 // this is the HTML builder for concerts^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 // Html for a single Brewery Name 
 const buildBreweryHtml = { 
     buildEntryCard: (singleBreweryItem) =>{
