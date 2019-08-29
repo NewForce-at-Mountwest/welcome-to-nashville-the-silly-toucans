@@ -30,7 +30,3 @@ var renderParksPrint = (parks)=>{
   }
   return outputContainerParks
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> master
