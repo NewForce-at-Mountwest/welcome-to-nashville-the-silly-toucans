@@ -36,7 +36,7 @@ var concertsbutton = document.querySelector("#concertsSearchButton")
 var outputContainerConcerts = document.querySelector("#bigOlContainer")
 
     concertsbutton.addEventListener("click", function(){
-      outputContainerConcerts.innerHTML = ""
+      document.querySelector("#bigOlContainer").innerHTML = ""
         outputContainerConcerts +=
         apiManagerConcerts.getAllConcerts()
 

@@ -18,7 +18,7 @@ const buildMeetupsHTML = {
 var buildConcertsHTML = {
 buildEntryCard: (singleConcertsItem) =>{
     return `<section>
-     <h3>${singleConcertsItem.name}</h3>
+     <p>${singleConcertsItem.name}</p>
     </section>`
 }}
 
@@ -37,6 +37,6 @@ const buildBreweryHtml = {
   const buildHTMLparks=   {
       buildEntryCard: (singleParkItem)=>{
           
-          return`<section><h3>${singleParkItem.park_name}</h3>
+          return`<section><p>${singleParkItem.park_name}</p>
           </section>`}}
 //    
