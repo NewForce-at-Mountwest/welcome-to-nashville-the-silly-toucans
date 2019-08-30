@@ -7,9 +7,7 @@ const buildMeetupsHTML = {
         console.log(apiObject.name.text)
         return `
         <section id="meetupSection">
-        <p>${apiObject.name.text}
-        <button class="meetupSaveButton">Save</button>
-        </p>
+        <p class="searchMeetUps">${apiObject.name.text}</p>
         </section>
         `
     }
@@ -21,7 +19,7 @@ const buildMeetupsHTML = {
 var buildConcertsHTML = {
 buildEntryCard: (singleConcertsItem) =>{
     return `<section>
-     <h3>${singleConcertsItem.name}</h3>
+     <p class= "searchConcerts">${singleConcertsItem.name}</p>
     </section>`
 }}
 
@@ -33,13 +31,13 @@ buildEntryCard: (singleConcertsItem) =>{
 const buildBreweryHtml = { 
     buildEntryCard: (singleBreweryItem) =>{
     return `<section>
-   <h3>${singleBreweryItem.name}</h3>
+   <p class= "searchBreweries">${singleBreweryItem.name}</p>
    </section>`;
     }}
 
   const buildHTMLparks=   {
       buildEntryCard: (singleParkItem)=>{
           
-          return`<section><h3>${singleParkItem.park_name}</h3>
+          return`<section><p class="searchParks">${singleParkItem.park_name}</p>
           </section>`}}
 //    
