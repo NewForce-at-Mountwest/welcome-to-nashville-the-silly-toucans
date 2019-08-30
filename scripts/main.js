@@ -35,20 +35,11 @@ document.querySelector("#meetUpsSearchButton").addEventListener("click", functio
 var concertsbutton = document.querySelector("#concertsSearchButton");
 var outputContainerConcerts = document.querySelector("#bigOlContainer");
 
-<<<<<<< HEAD
-    concertsbutton.addEventListener("click", function(){
-      document.querySelector("#bigOlContainer").innerHTML = ""
-        outputContainerConcerts +=
-        apiManagerConcerts.getAllConcerts()
-
-    })
-=======
 concertsbutton.addEventListener("click", function() {
   document.querySelector("#bigOlContainer").innerHTML = ``
   outputContainerConcerts += apiManagerConcerts.getAllConcerts()
   concertsSearchField = document.querySelector("#concertsInput").value
 })
->>>>>>> master
 
 // done printing concerts to the dom
 
@@ -57,13 +48,6 @@ var outputContainerParks = document.querySelector("#bigOlContainer")
 // creates click event for button and empties the DOM of previous content
 parksbutton.addEventListener("click", function(){
 
-<<<<<<< HEAD
     outputContainerParks.innerHTML = ""
      apiManagerParks.getAllParks()
 })
-=======
-parksbutton.addEventListener("click", function() {
-
-	outputContainerParks += apiManagerParks.getAllParks();
-});
->>>>>>> master

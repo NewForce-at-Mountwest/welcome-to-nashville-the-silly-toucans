@@ -18,11 +18,7 @@ const buildMeetupsHTML = {
 var buildConcertsHTML = {
 buildEntryCard: (singleConcertsItem) =>{
     return `<section>
-<<<<<<< HEAD
-     <p>${singleConcertsItem.name}</p>
-=======
      <p class= "searchConcerts">${singleConcertsItem.name}</p>
->>>>>>> master
     </section>`
 }}
 
@@ -41,10 +37,6 @@ const buildBreweryHtml = {
   const buildHTMLparks=   {
       buildEntryCard: (singleParkItem)=>{
           
-<<<<<<< HEAD
-          return`<section><p>${singleParkItem.park_name}</p>
-=======
           return`<section><p class="searchParks">${singleParkItem.park_name}</p>
->>>>>>> master
           </section>`}}
 //    
