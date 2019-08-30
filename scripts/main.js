@@ -48,6 +48,7 @@ var parksbutton =document.querySelector("#parksSearchButton")
 var outputContainerParks = document.querySelector("#bigOlContainer")
 // creates click event for button and empties the DOM of previous content
 parksbutton.addEventListener("click", function(){
+
     outputContainerParks.innerHTML = ""
-    outputContainerParks += apiManagerParks.getAllParks()
+     apiManagerParks.getAllParks()
 })

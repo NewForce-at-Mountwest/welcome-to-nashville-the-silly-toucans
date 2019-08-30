@@ -66,14 +66,14 @@ var apiManagerParks = {
 	getAllParks: () => {
 		const searchParksInput = document.querySelector("#parksInput").value;
 
-		return fetch(`https://data.nashville.gov/resource/74d7-b74t.json`)
+		return fetch(` http://localhost:3000/parks?${searchParksInput}=Yes `)
 			.then(response => response.json())
 			.then(parksToPrint => {
 				parksToPrint.forEach(singleParks => {
 					document.querySelector(
 						"#bigOlContainer"
                     ).innerHTML += buildHTMLparks.buildEntryCard(singleParks);
-                    document.querySelector("#parksInput").value = "";
+                    document.querySelector("#parksInput").value = ""
 				});
 			});
 	}
