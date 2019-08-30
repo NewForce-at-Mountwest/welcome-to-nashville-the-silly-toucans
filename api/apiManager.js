@@ -64,19 +64,20 @@ var apiManagerConcerts = {
 // this is concerts
 
 // =======
-
+// fetches all park data from park api and prints it to Dom if called upon
 var apiManagerParks = {
     getAllParks: () => {
         const searchParksInput = document.querySelector("#parksInput").value;
 
-        return fetch(`https://data.nashville.gov/resource/74d7-b74t.json`)
-            .then(response => response.json())
-            .then(parksToPrint => {
-                parksToPrint.forEach(singleParks => {
-                    document.querySelector(
-                        "#bigOlContainer"
+		return fetch(` http://localhost:3000/parks?${searchParksInput}=Yes `)
+			.then(response => response.json())
+			.then(parksToPrint => {
+				parksToPrint.forEach(singleParks => {
+					document.querySelector(
+						"#bigOlContainer"
                     ).innerHTML += buildHTMLparks.buildEntryCard(singleParks);
-                });
-            });
-    }
+                    document.querySelector("#parksInput").value = ""
+				});
+			});
+	}
 };

@@ -11,9 +11,7 @@ breweryButton.addEventListener("click", function() {
 //calls individual functions from javascript files
 
 //adds click function to search button defined in index
-document
-	.querySelector("#meetUpsSearchButton")
-	.addEventListener("click", function() {
+document.querySelector("#meetUpsSearchButton").addEventListener("click", function() {
 		document.querySelector("#bigOlContainer").innerHTML = ``;
 		//selects the value of the input field for the click event
 		meetupsSearchField = document.querySelector("#meetUpsInput").value;
@@ -45,10 +43,11 @@ concertsbutton.addEventListener("click", function() {
 
 // done printing concerts to the dom
 
-var parksbutton = document.querySelector("#parksSearchButton");
-var outputContainerParks = document.querySelector("#bigOlContainer");
+var parksbutton =document.querySelector("#parksSearchButton")
+var outputContainerParks = document.querySelector("#bigOlContainer")
+// creates click event for button and empties the DOM of previous content
+parksbutton.addEventListener("click", function(){
 
-parksbutton.addEventListener("click", function() {
-
-	outputContainerParks += apiManagerParks.getAllParks();
-});
+    outputContainerParks.innerHTML = ""
+     apiManagerParks.getAllParks()
+})
