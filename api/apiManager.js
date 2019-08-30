@@ -20,19 +20,12 @@ getAllBreweries: () => {
                 //page for fetching the API
 
                 //api fetch call including authorization key and parameter for search field
+                document.querySelector("#breweryInput").value = ``;
             });
         });
 }}
 
-                    document.querySelector("#breweryInput").value = ``;
-
-
-                    // apiManagerBreweries.getAllBreweries(singleBrewery)
-                })
-            })
-    }
-}
-
+                 
 //api fetch call including authorization key and parameter for search field
 const meetupsAPIManager = {
     getMeetups: () => {
