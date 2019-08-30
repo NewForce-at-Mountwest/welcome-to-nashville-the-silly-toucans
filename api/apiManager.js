@@ -3,8 +3,7 @@
 //page for fetching the API
 const apiManagerBreweries = {
 getAllBreweries: () => {
-
-    const searchBarInput = document.querySelector("#breweryInput").value;
+const searchBarInput = document.querySelector("#breweryInput").value;
     console.log(searchBarInput);
     return fetch(
         `https://api.openbrewerydb.org/breweries?by_state=tennessee&by_city=${searchBarInput}`
@@ -13,18 +12,17 @@ getAllBreweries: () => {
         .then(breweryToPrint => {
             console.log(breweryToPrint);
             breweryToPrint.forEach(singleBrewery => {
-                document.querySelector(
-                    "#bigOlContainer"
-                ).innerHTML += buildBreweryHtml.buildEntryCard(singleBrewery);
+                document.querySelector("#bigOlContainer").innerHTML += buildBreweryHtml.buildEntryCard(singleBrewery);
                 //    document.querySelector("#bigOlContainer").innerHTML += breweryToPrint
                 //page for fetching the API
 
                 //api fetch call including authorization key and parameter for search field
+                document.querySelector("#breweryInput").value = ``;
             });
         });
 }}
 
-
+                 
 //api fetch call including authorization key and parameter for search field
 const meetupsAPIManager = {
     getMeetups: () => {
@@ -61,7 +59,6 @@ var apiManagerConcerts = {
 };
 
 // this is where the api stuff ends for Concerts ^^^^^^^^^^
-// this is concerts
 
 // =======
 // fetches all park data from park api and prints it to Dom if called upon
