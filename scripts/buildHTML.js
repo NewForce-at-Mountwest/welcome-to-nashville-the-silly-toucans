@@ -7,11 +7,14 @@ const buildMeetupsHTML = {
         console.log(apiObject.name.text)
         return `
         <section id="meetupSection">
-        <p>${apiObject.name.text}</p>
+        <p>${apiObject.name.text}
+        <button class="meetupSaveButton">Save</button>
+        </p>
         </section>
         `
     }
 }
+
     
 // here is the buildHTML code for the Concerts section
 

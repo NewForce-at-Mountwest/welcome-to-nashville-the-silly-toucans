@@ -30,7 +30,7 @@ document
 				});
 			});
 		document.querySelector("#meetUpsInput").value = ``;
-	});
+  });
 
 // printing concerts to the dom
 
