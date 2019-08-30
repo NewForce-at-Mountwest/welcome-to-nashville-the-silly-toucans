@@ -47,7 +47,7 @@ To help you along, here is a wireframe of how your app might look.
 ### Parks API
 1. You need to put your `$$app_token` in your fetch
 ```js
-fetch(`https://data.nashville.gov/resource/xbru-cfzi.json?${parkInput}=Yes`, {
+fetch(`https://data.nashville.gov/resource/xbru-cfzi.json?${parkInput}=Yes$$app_token`, {
   "$$app_token": yourToken
 })
 

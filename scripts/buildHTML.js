@@ -25,7 +25,7 @@ buildEntryCard: (singleConcertsItem) =>{
 
 // this is the end of the concerts section buildHTML
 
-
+// Build park item with just a name
 
 // Html for a single Brewery Name 
 const buildBreweryHtml = { 
