@@ -4,11 +4,13 @@ const breweryButton = document.querySelector("#brewerySearchButton")
 var outputContainer = document.querySelector("#bigOlContainer")
  
     breweryButton.addEventListener("click", function (){
-        outputContainer.innerHTML =[""],
+        document.querySelector("#bigOlContainer").innerHTML = ``;
         outputContainer += apiManagerBreweries.getAllBreweries();
     
     },
     )
+
+
 //calls individual functions from javascript files
 
 //adds click function to search button defined in index
@@ -41,7 +43,8 @@ var outputContainerConcerts = document.querySelector("#bigOlContainer")
     })
 
     // done printing concerts to the dom
-
+  
+// Click event for parks
 var parksbutton =document.querySelector("#parksSearchButton")
 var outputContainerParks = document.querySelector("#bigOlContainer")
 

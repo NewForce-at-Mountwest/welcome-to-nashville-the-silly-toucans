@@ -1,5 +1,12 @@
 # Welcome to Nashville: Build an itinerary for a day trip to Music City
 
+## Building an itinerary along with Instructions on how to use our app
+1. Go to the "Welcome to Nashville" GitHib page and download the repo.
+2. Once you downloaded the repo, run our application.
+3. While inside of our application, you can type in each search bar; one for typing in a key word to find a "Meet Up" location, one for typing in a key word for a Concert in the area; one for typing in a key word for the local Parks;
+and another for typing in a key word to find a Brewery that peaks your interest.
+4. Your results should display at the bottom of the screen for easy readibility.
+
 The Nashville Convention & Visitors Corp has contracted you to build a dashboard for tourists. Approximately 15.2 million people visit Nashville every year. NCVC wants an itinerary builder that lets tourists search for things to do during their stay.
 
 In this app users can search for four different things to do/visit in Nashville:

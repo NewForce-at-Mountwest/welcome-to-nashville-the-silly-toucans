@@ -1,6 +1,5 @@
 //page for building an entry to HTML
 
-
 //building an HTML string
 const buildMeetupsHTML = {
     buildSingleEvent: apiObject => {
@@ -24,16 +23,15 @@ buildEntryCard: (singleConcertsItem) =>{
 
 // this is the end of the concerts section buildHTML
 
-
-
 // Html for a single Brewery Name 
 const buildBreweryHtml = { 
     buildEntryCard: (singleBreweryItem) =>{
     return `<section>
-   <h3>${singleBreweryItem.name}</h3>
+   <p>${singleBreweryItem.name}</p>
    </section>`;
     }}
 
+    // Html for a single Park
   const buildHTMLparks=   {
       buildEntryCard: (singleParkItem)=>{
           
