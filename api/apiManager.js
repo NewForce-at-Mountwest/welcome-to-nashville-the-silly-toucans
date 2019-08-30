@@ -3,8 +3,7 @@
 //page for fetching the API
 const apiManagerBreweries = {
 getAllBreweries: () => {
-
-    const searchBarInput = document.querySelector("#breweryInput").value;
+const searchBarInput = document.querySelector("#breweryInput").value;
     console.log(searchBarInput);
     return fetch(
         `https://api.openbrewerydb.org/breweries?by_state=tennessee&by_city=${searchBarInput}`
@@ -13,9 +12,7 @@ getAllBreweries: () => {
         .then(breweryToPrint => {
             console.log(breweryToPrint);
             breweryToPrint.forEach(singleBrewery => {
-                document.querySelector(
-                    "#bigOlContainer"
-                ).innerHTML += buildBreweryHtml.buildEntryCard(singleBrewery);
+                document.querySelector("#bigOlContainer").innerHTML += buildBreweryHtml.buildEntryCard(singleBrewery);
                 //    document.querySelector("#bigOlContainer").innerHTML += breweryToPrint
                 //page for fetching the API
 
