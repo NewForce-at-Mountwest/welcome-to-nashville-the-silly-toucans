@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <title>Welcome!</title>
 </head>
 <body>
+    
+    
+
+   
+<body>
+    <!--concert header input and button -->
+    <h1 class='mainHeader'>Welcome to Nashville!</h1>
         <section class = "concertsText">
                 <h1 class ="concertsHeader">Search for Concerts</h1>
                  <label for=" "></label>
@@ -16,6 +23,7 @@
                     <button id= "concertsSearchButton">Search</button>
                    <div class= "concertsAnswerArea"></div>
                    </section>
+                   <!-- MeetUps header input section and button -->
         <section class = "meetUpsText">
                 <h1 class ="meetUpsHeader">Search for Meet Up Areas</h1>
                  <label for=" "></label>
@@ -23,6 +31,7 @@
                     <button id= "meetUpsSearchButton">Search</button>
                    <div class= "meetUpsAnswerArea"></div>
                    </section>
+                   <!-- Park section header input and button -->
         <section class = "parksText">
             <h1 class ="parksHeader">Search for Parks</h1>
              <label for=" "></label>
@@ -30,6 +39,7 @@
                 <button id= "parksSearchButton">Search</button>
                <div class= "parksAnswerArea"></div>
                </section>
+               <!-- brewery header input and button -->
         <section class = "breweryText">
             <h1 class = "breweryHeader">Search for Brewery</h1>
             <label for=" "></label>
@@ -37,7 +47,9 @@
                 <button id= "brewerySearchButton">Search</button>
                <div class= "breweryAnswerArea"></div>
                </section>
+               <!-- bigOlContainer is where all our information prints -->
     <section id="bigOlContainer"></section>
+    <!-- script sources for our javascript pages -->
     <script src="api/apiManager.js"></script>
     <script src="scripts/buildHTML.js"></script>
     <script src="scripts/domPrinter.js"></script>

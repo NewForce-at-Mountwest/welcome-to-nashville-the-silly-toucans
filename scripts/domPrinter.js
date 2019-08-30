@@ -29,8 +29,7 @@ var renderConcertsPrint = (concerts) =>{
       return outPutContainerConcerts
     }
 // above content for concerts is over 
-
-    // Printing Parks to the DOM
+// below content is to loop over parks array and build HTML for parks
 // =======
 var renderParksPrint = (parks)=>{
   let parksInput = ""

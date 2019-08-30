@@ -6,7 +6,7 @@ const buildMeetupsHTML = {
         console.log(apiObject.name.text)
         return `
         <section id="meetupSection">
-        <p>${apiObject.name.text}</p>
+        <p class="searchMeetUps">${apiObject.name.text}</p>
         </section>
         `
     }
@@ -17,17 +17,19 @@ const buildMeetupsHTML = {
 var buildConcertsHTML = {
 buildEntryCard: (singleConcertsItem) =>{
     return `<section>
-     <h3>${singleConcertsItem.name}</h3>
+     <p class= "searchConcerts">${singleConcertsItem.name}</p>
     </section>`
 }}
 
 // this is the end of the concerts section buildHTML
 
+// Build park item with just a name
+
 // Html for a single Brewery Name 
 const buildBreweryHtml = { 
     buildEntryCard: (singleBreweryItem) =>{
     return `<section>
-   <p>${singleBreweryItem.name}</p>
+   <p class= "searchBreweries">${singleBreweryItem.name}</p>
    </section>`;
     }}
 
@@ -35,6 +37,6 @@ const buildBreweryHtml = {
   const buildHTMLparks=   {
       buildEntryCard: (singleParkItem)=>{
           
-          return`<section><h3>${singleParkItem.park_name}</h3>
+          return`<section><p class="searchParks">${singleParkItem.park_name}</p>
           </section>`}}
 //    
