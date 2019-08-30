@@ -1,3 +1,4 @@
+//page for printing HTML string to the DOM
 // Printing Breweries to the DOM
 const renderBreweryPrint = (breweries) =>{
      let breweryInput =""
@@ -8,10 +9,7 @@ const renderBreweryPrint = (breweries) =>{
       return outPutContainer
     }
 
-    // Printing Parks to the DOM
-
-//page for printing HTML string to the DOM
-
+// Printing Meetups to the DOM
 const meetupDomPrinter = {
 	printSingleEvent: singleEvent => {
 		// Build HTML string for individual event
