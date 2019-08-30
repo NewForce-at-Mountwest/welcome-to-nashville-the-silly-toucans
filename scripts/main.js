@@ -28,7 +28,7 @@ document.querySelector("#meetUpsSearchButton").addEventListener("click", functio
 				});
 			});
 		document.querySelector("#meetUpsInput").value = ``;
-	});
+  });
 
 // printing concerts to the dom
 
