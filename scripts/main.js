@@ -38,8 +38,10 @@ var concertsbutton = document.querySelector("#concertsSearchButton");
 var outputContainerConcerts = document.querySelector("#bigOlContainer");
 
 concertsbutton.addEventListener("click", function() {
-	outputContainerConcerts += apiManagerConcerts.getAllConcerts();
-});
+  document.querySelector("#bigOlContainer").innerHTML = ``
+  outputContainerConcerts += apiManagerConcerts.getAllConcerts()
+  concertsSearchField = document.querySelector("#concertsInput").value
+})
 
 // done printing concerts to the dom
 
@@ -47,5 +49,6 @@ var parksbutton = document.querySelector("#parksSearchButton");
 var outputContainerParks = document.querySelector("#bigOlContainer");
 
 parksbutton.addEventListener("click", function() {
+
 	outputContainerParks += apiManagerParks.getAllParks();
 });

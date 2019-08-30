@@ -1,0 +1,65 @@
+.concertsText {
+    text-align: center;
+    color: white;
+    font-family: 'arial'
+}
+
+.meetUpsText{
+    color: white;
+    text-align: center;
+    font-family: 'arial'
+}
+
+.parksText{
+    text-align: center;
+    color: white;
+    font-family: 'arial'
+}
+
+.breweryText{
+    text-align: center;
+    color: white;
+    font-family: 'arial'
+}
+
+.searchConcerts{
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 900;
+    font-family: 'arial'
+}
+
+.searchBreweries{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'arial'
+}
+
+.searchParks{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'arial'
+}
+
+.searchMeetUps{
+    text-align: justify;
+    color: whitesmoke;
+    font-family: 'arial';
+    
+}
+
+body{
+   background-image:linear-gradient(rgb(216, 26, 184), black);
+   background-repeat: no-repeat;
+   height: 100%;
+   background-attachment: fixed;
+   border: 5px solid white;
+   padding: 10%;
+}
+
+.mainHeader{
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-weight:bold;
+}
